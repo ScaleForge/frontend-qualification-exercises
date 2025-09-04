@@ -16,7 +16,12 @@ The completed exercises will be evaluated by the **ScaleForge** team using the f
    - `JohnPaulCalvo`
 
 # Requirements
-The web application displays a list of members and their corresponding details. The web application must implement the UI as specified in the provided Figma [file](https://www.figma.com/file/AwrMuHBOqmAAj0g8mv4MWb/Frontend-Test-Mockup-Design?type=design&node-id=4%3A121&mode=design&t=gNzV3SQsKXfkhEJR-1). The list of members can be fetched from the provided [GraphQL API](https://report.development.opexa.io/graphql). All the necessary information for using the GraphQL API is provided in the `Docs` section in the GraphQL Playground. In particular, the web application must use the following endpoints:
+The web application displays a list of members and their corresponding details. 
+
+The web application must implement the UI as specified in the provided 
+Figma [file](https://www.figma.com/file/AwrMuHBOqmAAj0g8mv4MWb/Frontend-Test-Mockup-Design?type=design&node-id=4%3A121&mode=design&t=gNzV3SQsKXfkhEJR-1). 
+
+The list of members can be fetched from the provided [GraphQL API](https://report.development.opexa.io/graphql). All the necessary information for using the GraphQL API is provided in the `Docs` section in the GraphQL Playground. In particular, the web application must use the following endpoints:
 - `Query.members` - fetch the list of members
 - `Query.membersByName` - search members by name
 - `Query.membersByEmailAddress` - search members by email address
@@ -37,6 +42,15 @@ curl --request POST \
   --header 'platform-code: Z892' \
   --header 'role: OPERATOR'
 ```
+
+{
+    "session": {
+        "id": "NJQ9yQVozjMGzEV8F",
+        "dateTimeCreated": "2025-09-04T07:22:16.277Z"
+    },
+    "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyeDYzclJQVVc0UFdLVXpkUm8iLCJyb2xlIjoiT1BFUkFUT1IiLCJqdGkiOiIxMjBmZmVhZDk2ZjcyODZiOGY1OGI3MzgiLCJpcEFkZHJlc3MiOiI1NC44Ni41MC4xMzkiLCJsb2NhdGlvbiI6IkFzaGJ1cm4sIFVuaXRlZCBTdGF0ZXMiLCJwbGF0Zm9ybSI6IjEydXd1UkNjWXAxY1dpWHpQWSIsInN0YXR1cyI6IkFDVElWRSIsImlhcCI6IjIwMjUtMDktMDRUMDc6MjE6NDYuMjc3KzAwOjAwIiwidHlwZSI6ImFjY2VzcyIsImlhdCI6MTc1Njk3MDUzNiwiZXhwIjoxNzU3MDU2OTM2fQ.-cpEe9Ru-E_J-wh7TdT20tMb4NDcrCBxAL1mstHm1J8",
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyeDYzclJQVVc0UFdLVXpkUm8iLCJyb2xlIjoiT1BFUkFUT1IiLCJqdGkiOiIxMjBmZmVhZDk2ZjcyODZiOGY1OGI3MzgiLCJpcEFkZHJlc3MiOiI1NC44Ni41MC4xMzkiLCJsb2NhdGlvbiI6IkFzaGJ1cm4sIFVuaXRlZCBTdGF0ZXMiLCJwbGF0Zm9ybSI6IjEydXd1UkNjWXAxY1dpWHpQWSIsInN0YXR1cyI6IkFDVElWRSIsImlhcCI6IjIwMjUtMDktMDRUMDc6MjE6NDYuMjc3KzAwOjAwIiwidHlwZSI6InJlZnJlc2giLCJpYXQiOjE3NTY5NzA1MzYsImV4cCI6MTc1NzA1NjkzNn0.r5mlSFfapm6k08xcXdqItsFktPmxgjAYZHicqDk796U"
+}
 
 To sum up, the web application includes the following features:
 - Table of members
